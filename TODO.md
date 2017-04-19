@@ -1,5 +1,28 @@
-Algorithem List:
+Algorithem List to do:
 
-* Linear Search
-* Binary Search
-
+- Sorting and Searching
+	- Linear Search
+	- Binary Search
+	- Selection sort
+	- Insertion Sort
+	- Merge Sort
+	- Quick Sort
+- Direct Acyclic Graphs
+	- Topology sorting
+	- Critical path in PERT Chart
+	- Shortest Path in a Directed acyclic graph
+- Shortest Path
+	- Dijkstra algorithm
+	- Bellman-Ford algorithem
+	- Floyd-Worshall algorithem
+- String Algorithem
+	- Longest Common subsequence
+	- Transforing oen string to another
+	- String Matching
+- Foundation of Cryptography
+	- Simple substitution cipher
+	- Symmetric-key cryptography
+	- Public-key Cryptography
+	- RSA Cryptography
+	- Hybrid Cryptosystem
+	- Computing random Number
