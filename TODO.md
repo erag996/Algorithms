@@ -1,4 +1,5 @@
-##Algorithems list
-	*Linear Search
-	*Binary search
-	*Selection Sort
+Algorithem List:
+
+* Linear Search
+* Binary Search
+
