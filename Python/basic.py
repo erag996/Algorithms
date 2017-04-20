@@ -5,24 +5,25 @@ class linear_search():
     :param arr: Array(1D) or list
 
     """
+
     def __init__(self, arr):
         self.arr = arr
 
-    def find(self,x,n=None):
+    def find(self, x, n=None):
         '''
         if arr[i]=x then it return i else None
         :param x: value you want to search
         :param n: till what index you want to search
         :return: Index for the first appearance of x
         '''
-        if n==None:
+        if n == None:
             n = len(self.arr)
-        for i in range (n):
-            if self.arr[i]==x:
+        for i in range(n):
+            if self.arr[i] == x:
                 return i
         return None
 
-    def findAll(self,x,n=None):
+    def findAll(self, x, n=None):
         '''
         make an empty list
         if arr[i]=x then append i to that list
@@ -33,14 +34,14 @@ class linear_search():
         '''
 
         index = []
-        if n==None:
+        if n == None:
             n = len(self.arr)
-        for i in range (n):
-            if self.arr[i]==x:
+        for i in range(n):
+            if self.arr[i] == x:
                 index.append(i)
         return index
 
-    def isPresent(self,x,n=None):
+    def isPresent(self, x, n=None):
         '''
         if arr[i]=x then it return True else False
         :param x: value you want to search
@@ -48,13 +49,23 @@ class linear_search():
         :return: Ture/False if x is found in arr
         '''
 
-        if n==None:
+        if n == None:
             n = len(self.arr)
-        for i in range (n):
-            if self.arr[i]==x:
+        for i in range(n):
+            if self.arr[i] == x:
                 return True
         return False
-        pass
 
-    def showTime(self):
-        pass
+class linear_search_sentinel():
+
+    def __init__(self,arr):
+        self.arr = arr
+
+    def find(self, x, n):
+        last = self.arr[n]
+        self.arr[n]=x
+        i=0
+        while (self.arr[i] != x): i = i+1
+        self.arr[n]=last
+        if i < n or self.arr[n]==x :return i
+        return None
